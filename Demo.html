@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Animated Resume</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .resume-container {
+      width: 90%;
+      max-width: 800px;
+      margin: 20px;
+    }
+
+    .resume-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      color: #ff9f43;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #00cec9;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h3 {
+      font-size: 1.5rem;
+      color: #ff7675;
+      margin-bottom: 15px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section h3::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: #00cec9;
+      border-radius: 2px;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .section ul li {
+      background: rgba(247, 110, 110, 0.1);
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .section ul li:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+    }
+
+    @media (max-width: 480px) {
+      .resume-card { padding: 20px; }
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <div class="resume-card">
+      <h1>Manish Mallah</h1>
+      <h2>Data Analytics</h2>
+      <p>Passionate about creating interactive Dashboard. Skilled in Python, Power Bi, SQL, and modern frameworks.</p>
+
+      <div class="section">
+        <h3>Experience</h3>
+        <ul>
+          <li>Senior Web Developer at XYZ Corp (2020 - Present)</li>
+          <li>Frontend Developer at ABC Inc (2017 - 2020)</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Education</h3>
+        <ul>
+          <li>Bachelor of Science in Data Science, TCSC (2021 - 2023)</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Skills</h3>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Power BI, Python</li>
+          <li>Analaytics, Data Pipelines</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
